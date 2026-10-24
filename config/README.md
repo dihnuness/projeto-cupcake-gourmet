@@ -1,0 +1,1 @@
+O arquivo `database.php` contém credenciais e não deve ser versionado. Em hospedagem Apache, o `.htaccess` desta pasta bloqueia o acesso HTTP direto. Em Nginx ou outros servidores, configure regra equivalente de negação e, preferencialmente, mantenha o arquivo de configuração fora da raiz pública.

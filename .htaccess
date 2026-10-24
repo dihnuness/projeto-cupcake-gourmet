@@ -1,0 +1,4 @@
+Options -Indexes
+<FilesMatch "^(README\.md|composer\.json|package\.json|phpunit\.xml)$">
+  Require all denied
+</FilesMatch>
