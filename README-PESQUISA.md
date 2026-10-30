@@ -1,7 +1,5 @@
-# Pesquisa acadêmica simulada
+# Pesquisa de usabilidade — simulação acadêmica
 
-Esta atividade apresenta **cinco participantes nominais com respostas inteiramente fictícias**. Não representa entrevistas realizadas, consentimento ou coleta real.
+Questionário demonstrativo de cinco perguntas abertas sobre o uso do site Cupcake Gourmet. Foram criados cinco depoimentos fictícios, com comentários positivos e sugestões de melhoria, para ilustrar uma avaliação de usuários. **Nenhuma entrevista real foi realizada.**
 
-O questionário original não foi localizado nos arquivos recebidos; foram criadas cinco perguntas demonstrativas sobre usabilidade do site Cupcake Gourmet. Substitua as perguntas e as notas em `pesquisa.js` quando o questionário oficial estiver disponível.
-
-Abra `pesquisa.html` para visualizar as perguntas, as respostas e as médias. A página é estática e funciona no GitHub Pages sem PHP ou banco de dados.
+Abra `pesquisa.html` para ler as respostas e o resumo qualitativo. Edite `pesquisa.js` para atualizar as perguntas e respostas. Esta página funciona sem PHP ou banco de dados.
