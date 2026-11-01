@@ -5,7 +5,7 @@ Sistema demonstrativo de encomendas de cupcakes, reconstruído para o Projeto In
 ## Executar no XAMPP (Windows 11)
 1. Copie esta pasta para `C:\xampp\htdocs\cupcake-gourmet`.
 2. Inicie Apache e MySQL no XAMPP.
-3. No phpMyAdmin, importe `database/schema.sql` (cria banco, tabelas e oito produtos).
+3. **Se você já importou o banco do projeto antigo**, faça antes um backup e, somente se não houver dados que queira manter, exclua o banco local antigo `cupcake_gourmet` pelo phpMyAdmin. O esquema novo é diferente; `CREATE TABLE IF NOT EXISTS` não atualiza tabelas existentes. Em seguida, importe `database/schema.sql` (cria banco, tabelas e oito produtos).
 4. Copie `config/database.example.php` para `config/database.php`. Em instalação local padrão do XAMPP, usuário `root`, senha vazia. **Não publique o arquivo de configuração.**
 5. Acesse `http://localhost/cupcake-gourmet/`.
 6. Confira `http://localhost/cupcake-gourmet/api.php?action=health` e `http://localhost/cupcake-gourmet/api.php?action=products`.
