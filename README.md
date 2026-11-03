@@ -39,7 +39,7 @@ O Cupcake Gourmet é um sistema web demonstrativo para uma confeitaria. O projet
 
 ## Validação com usuários
 
-O sistema foi avaliado por **cinco participantes**, em 01/11/2026. Todos informaram ter conseguido visualizar os produtos, adicionar itens à sacola, finalizar um pedido demonstrativo e consultar um pedido. A **média da avaliação geral foi de 4,6/5**.
+O sistema foi avaliado por **seis participantes**, em 01 e 02/11/2026. Todos relataram conseguir visualizar os produtos e adicioná-los à sacola; **5/6** relataram finalizar um pedido demonstrativo e **4/6** consultar um pedido pelo código. A **média da avaliação geral foi de 4,0/5** (navegação e aparência: **4,5/5** cada). O feedback indicou oportunidades de melhoria na experiência do carrinho e no fluxo de compra.
 
 Os resultados são respostas declaradas pelos participantes; não substituem testes técnicos automatizados. Consulte os documentos de avaliação e de testes para ver as evidências e limitações.
 
