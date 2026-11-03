@@ -1,26 +1,60 @@
-# Cupcake Gourmet — Projeto Integrador II
+# 🧁 Cupcake Gourmet
 
-Sistema demonstrativo de encomendas de cupcakes, reconstruído para o Projeto Integrador Transdisciplinar em Engenharia de Software II.
+**Projeto Integrador Transdisciplinar em Engenharia de Software II**
 
-## Executar no XAMPP (Windows 11)
-1. Copie esta pasta para `C:\xampp\htdocs\cupcake-gourmet`.
-2. Inicie Apache e MySQL no XAMPP.
-3. **Se você já importou o banco do projeto antigo**, faça antes um backup e, somente se não houver dados que queira manter, exclua o banco local antigo `cupcake_gourmet` pelo phpMyAdmin. O esquema novo é diferente; `CREATE TABLE IF NOT EXISTS` não atualiza tabelas existentes. Em seguida, importe `database/schema.sql` (cria banco, tabelas e oito produtos).
-4. Copie `config/database.example.php` para `config/database.php`. Em instalação local padrão do XAMPP, usuário `root`, senha vazia. **Não publique o arquivo de configuração.**
-5. Acesse `http://localhost/cupcake-gourmet/`.
-6. Confira `http://localhost/cupcake-gourmet/api.php?action=health` e `http://localhost/cupcake-gourmet/api.php?action=products`.
-7. Faça um pedido fictício e confira `orders` e `order_items` no phpMyAdmin.
+O Cupcake Gourmet é um sistema web demonstrativo para uma confeitaria. O projeto permite explorar um catálogo de cupcakes, montar uma sacola, registrar pedidos fictícios e consultar pedidos por um código gerado pelo sistema.
 
-**Requisitos:** PHP 8.1+, PDO MySQL, MySQL/MariaDB, Apache. **Pagamento é simulado**, sem transações financeiras.
+> **Projeto acadêmico:** não são realizadas vendas, cobranças ou transações financeiras reais. Utilize dados fictícios nas demonstrações.
+
+## 🌐 Demonstração online
+
+**[Acessar o Cupcake Gourmet](https://cupcakegourmet.infinityfreeapp.com/)**
 
 ## Funcionalidades
-Catálogo com busca e filtro; sacola com ajuste de quantidade; formulário de checkout com validação; persistência transacional de pedido e itens; consulta por código de pedido; interface responsiva; mensagens de erro. O servidor obtém preços do banco e não confia em valores enviados pelo navegador.
 
-## Entrega acadêmica
-- `docs/relatorio-academico.md`: escopo, requisitos, arquitetura, UML, modelagem e IHC.
-- `docs/dicionario-de-dados.md`: campos, chaves e normalização.
-- `docs/plano-e-registro-de-testes.md`: cenários e espaço para resultados reais.
-- `docs/avaliacao-usuarios.md`: formulário para cinco avaliações reais.
-- `docs/roteiro-video.md`: guia de demonstração.
+- Catálogo de cupcakes com busca por nome e filtro por categoria.
+- Sacola com inclusão, remoção e ajuste de quantidades.
+- Formulário de pedido com validação dos dados.
+- Registro de pedidos e seus itens no banco de dados.
+- Código para consultar um pedido após sua realização.
+- Interface responsiva e mensagens de feedback.
+- Preços consultados e calculados pelo servidor, sem confiar nos valores enviados pelo navegador.
 
-Os testes locais e as avaliações de cinco pessoas **precisam ser executados**; não foram simulados como evidência. Não use dados pessoais reais em ambiente de demonstração.
+## Tecnologias
+
+| Camada | Tecnologias |
+| --- | --- |
+| Interface | HTML, CSS e JavaScript |
+| Backend | PHP 8.1+ e PDO |
+| Banco de dados | MySQL/MariaDB |
+| Servidor local | Apache (XAMPP) |
+| Hospedagem de demonstração | InfinityFree |
+
+## Documentação acadêmica
+
+- [Relatório técnico: escopo, requisitos, arquitetura e modelagem](docs/relatorio-academico.md)
+- [Dicionário de dados](docs/dicionario-de-dados.md)
+- [Plano e registro de testes](docs/plano-e-registro-de-testes.md)
+- [Avaliação com usuários](docs/avaliacao-usuarios.md)
+
+## Validação com usuários
+
+O sistema foi avaliado por **cinco participantes**, em 01/11/2026. Todos informaram ter conseguido visualizar os produtos, adicionar itens à sacola, finalizar um pedido demonstrativo e consultar um pedido. A **média da avaliação geral foi de 4,6/5**.
+
+Os resultados são respostas declaradas pelos participantes; não substituem testes técnicos automatizados. Consulte os documentos de avaliação e de testes para ver as evidências e limitações.
+
+## Executar localmente
+
+**Requisitos:** PHP 8.1+ com PDO MySQL, MySQL/MariaDB e Apache (por exemplo, via XAMPP).
+
+1. Coloque o projeto em `C:\xampp\htdocs\cupcake-gourmet`.
+2. Inicie Apache e MySQL no XAMPP.
+3. Em uma instalação nova, importe `database/schema.sql` no MySQL. **Se já existir um banco com dados, faça backup e revise o esquema antes de importar; não exclua dados sem necessidade.**
+4. Copie `config/database.example.php` para `config/database.php` e ajuste as credenciais do seu ambiente.
+5. Acesse `http://localhost/cupcake-gourmet/` no navegador.
+
+**Segurança:** não publique `config/database.php`, senhas ou dados pessoais reais. O arquivo de configuração local está listado no `.gitignore`.
+
+---
+
+Desenvolvido como atividade acadêmica do curso de **Engenharia de Software**.
