@@ -9,11 +9,11 @@
 
 | Participante | Data | Visualizou cupcakes | Navegação (1–5) | Aparência (1–5) | Adicionou à sacola | Consultou pedido | Avaliação geral (1–5) | Finalizou pedido demonstrativo | Observação |
 |---|---|---|---:|---:|---|---|---:|---|---|
-| João Lucas | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | Sem resposta no campo de dificuldades |
-| Matheus Dummont | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 4 | Sim | “Não encontrei” |
-| Fabio Marinho | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | “Dificuldade alguma” |
-| Denis santana | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 4 | Sim | “Sem dificuldade” |
-| Douglas Santana | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | “Não encontrei dificuldade” |
+| Participante 1 | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | Sem resposta no campo de dificuldades |
+| Participante 2 | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 4 | Sim | “Não encontrei” |
+| Participante 3 | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | “Dificuldade alguma” |
+| Participante 4 | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 4 | Sim | “Sem dificuldade” |
+| Participante 5 | 01/11/2026 | Sim | 5 | 5 | Sim | Sim | 5 | Sim | “Não encontrei dificuldade” |
 
 **Observação sobre o formulário:** a resposta exportada como “Opção 1” para a pergunta de finalização foi confirmada como equivalente a **“Sim”**.
 
