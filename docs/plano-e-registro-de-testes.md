@@ -1,13 +1,13 @@
 # Plano de verificação e validação — PIT II
 
 **Responsável:** Diogo Nunes dos Santos — RGM 33207445  
-**Data das evidências e avaliações:** 01/11/2026  
+**Data das evidências:** 01/11/2026; **avaliações:** 01 e 02/11/2026  
 **Sistema:** Cupcake Gourmet, execução local com XAMPP/PHP/MySQL. Versões exatas dos componentes não registradas.
 
 ## Critério de registro
 
 - **Evidenciado:** comportamento visível nas capturas de tela fornecidas pelo autor.
-- **Relatado:** cinco participantes marcaram “Sim” no formulário; isso não substitui logs técnicos.
+- **Relatado:** seis participantes responderam ao formulário, com resultados mistos; isso não substitui logs técnicos.
 - **Pendente:** não foi fornecida evidência suficiente para confirmar o cenário específico.
 
 ## Matriz de testes
@@ -19,23 +19,25 @@
 | T03 | GET api.php?action=products | Lista de oito produtos | **Parcial** | O catálogo foi exibido; não foi capturada a resposta HTTP |
 | T04 | Pesquisar Chocolate | Filtra catálogo | **Pendente** | Campo de busca visível, sem execução documentada |
 | T05 | Filtrar Frutados | Apenas categoria escolhida | **Pendente** | Seletor visível, sem resultado filtrado documentado |
-| T06 | Adicionar produto | Sacola e contador atualizam | **Evidenciado parcialmente; relatado por 5/5** | Sacola mostra Chocolate Belga e Red Velvet; não há captura da transição do contador |
+| T06 | Adicionar produto | Sacola e contador atualizam | **Evidenciado parcialmente; relatado por 6/6** | Sacola mostra Chocolate Belga e Red Velvet; não há captura da transição do contador |
 | T07 | Aumentar e diminuir quantidade | Subtotal atualiza | **Pendente** | Botões visíveis; não há antes/depois documentado |
 | T08 | Enviar sacola vazia | Mensagem de validação | **Pendente** | Sem evidência |
 | T09 | Enviar e-mail inválido | Pedido não é gravado | **Pendente** | Sem evidência |
-| T10 | Enviar pedido válido | Código de 12 caracteres | **Evidenciado; relatado por 5/5** | Confirmação com código alfanumérico e total de R$ 34,80 |
+| T10 | Enviar pedido válido | Código de 12 caracteres | **Evidenciado; relatado por 5/6** | Confirmação com código alfanumérico e total de R$ 34,80 |
 | T11 | Conferir tabela orders | Pedido salvo | **Pendente de inspeção direta** | Consulta posterior sugere persistência, mas não há captura da tabela |
 | T12 | Conferir tabela order_items | Itens salvos e associados | **Pendente** | Sem captura do banco |
-| T13 | Consultar código válido | Status e total corretos | **Evidenciado; relatado por 5/5** | Consulta mostra o mesmo código, status “Recebido” e R$ 34,80 |
+| T13 | Consultar código válido | Status e total corretos | **Evidenciado; relatado por 4/6** | Consulta mostra o mesmo código, status “Recebido” e R$ 34,80 |
 | T14 | Consultar código inexistente | HTTP 404/mensagem | **Pendente** | Sem evidência |
 | T15 | Desligar MySQL e recarregar | Mensagem de indisponibilidade | **Pendente** | Sem evidência |
 | T16 | Testar tela estreita | Layout responsivo | **Pendente** | Capturas apresentadas em largura de desktop |
 | T17 | Navegação por teclado | Controles alcançáveis | **Pendente** | Sem evidência |
 | T18 | Enviar item inválido à API | HTTP 422, sem gravação | **Pendente** | Sem evidência |
 
-## Avaliação por cinco participantes
+## Avaliação por seis participantes
 
-Em 01/11/2026, João Lucas, Matheus Dummont, Fabio Marinho, Denis santana e Douglas Santana responderam ao formulário. Todos declararam conseguir visualizar cupcakes, adicionar itens à sacola, consultar o pedido e finalizar uma encomenda demonstrativa. A nota média geral foi **4,6/5**; navegação e aparência receberam médias de **5,0/5**. Quatro participantes informaram explicitamente não ter encontrado dificuldades; um não preencheu esse campo.
+Em 01 e 02/11/2026, seis participantes responderam ao formulário considerado nesta versão. Todos declararam visualizar cupcakes e adicionar itens à sacola. **5/6** declararam finalizar um pedido demonstrativo e **4/6** consultar o pedido pelo código. As médias foram **4,0/5** na avaliação geral, **4,5/5** em navegação e **4,5/5** em aparência.
+
+Foram sugeridas melhorias na experiência do carrinho, opção de continuar comprando, separação das etapas de endereço e pagamento e eventual login com níveis de acesso. As respostas negativas sobre consulta e finalização precisam ser investigadas; não há diagnóstico técnico suficiente para atribuir uma causa.
 
 Detalhamento em [avaliacao-usuarios.md](avaliacao-usuarios.md).
 
@@ -47,7 +49,7 @@ As capturas estão inseridas no **laudo de qualidade do documento Word da ativid
 
 ## Registro de defeitos e correções
 
-O formulário dos participantes **não descreveu defeitos específicos**. Portanto, não se registra correção decorrente desses testes nem reteste corretivo sem evidência. Há cenários técnicos ainda pendentes, listados acima, que não devem ser confundidos com falhas encontradas.
+O formulário trouxe sugestões de usabilidade e respostas negativas para consulta por código (2/6) e finalização (1/6). Isso sinaliza pontos para investigação, mas não permite diagnosticar defeitos específicos nem registrar correções ou retestes sem evidência. Há cenários técnicos pendentes na matriz acima.
 
 ## Limitações
 
